@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS Floating</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style type="text/css">
+
+	.big {
+		font-size:200%;
+	}
+	
+	#red {
+		color:#E40B12;
+	}
+	
+	.underline {
+		text-decoration:underline;
+	}
+	
+	.bold {
+		font-weight:bold;
+	}
+	
+	.yellowbox {
+		background-color:#F7FE2E;
+		width:150px;
+		height:150px;
+		margin: 30px 200px 20px 20px;
+		padding: 20px 40px;
+	}
+	
+	.orangebox {
+		background-color:#F9C007;
+		width:250px;
+		height:100px;
+		margin-left:200px;
+		padding:25px;
+		
+	}
+	
+	p {
+	
+		padding:0;
+		margin:0;
+	}
+	
+	.redbox {
+		background-color:#E40B12;
+		color:yellow;
+		width:350px;
+		height:70px;
+		font-size:120%;
+		margin-bottom:50px;
+	}
+	
+	.clear {
+	
+		clear:both;
+	}
+</style>
+  
+</head>
+
+<body>
+	<div class="yellowbox">
+	
+		<p class="big bold">Just any text will do.</p>
+	
+	</div>
+	
+	<div class="orangebox">
+	
+		<p id="red" class="big bold">Just any more text will do.</p>
+	
+	</div>
+	
+	<br /><br />
+	
+	<div class="redbox">
+	
+		<p>The fifth word in <span class="underline big bold">this</span> line is underlined.</p>
+
+	</div>
+	
+	<p>
+	position:relative; possible to specify distance from sides: top:20px; moves it down 20px.<br /> 
+	left:50px moves it to the right 50px.
+	position:absolute; ignores the rest of the flow and overlaps.<br /><br />
+	position:fixed; the div stays in the same place on the screen when you scroll up and down. This is used for menues.<br /><br />
+	The default position is static.<br /><br />
+	
+	margin:50px; creates a margin of 50px around the div, so all other elements move accordingly.<br />
+	if we assign 4 measurments, the first is the top, and the others follow clockwise.<br />
+	possible to assign margin to selected sides: margin-right:, margin-top:xx;<br /><br />
+	
+	padding is the space around the text. we to set the p tag to zero and margin to 0 in order to be able<br />
+	to control the padding fully. <br />
+	If we write one value after the padding:, it will give that measure on four sides of the text.<br />
+	If we write 2 values, they will repeat themselve, 1st top, 2nd right, 1st bottom, 2nd bottom.<br />
+	We can also use padding-top:x; etc.<br />
+	The measurments of the padding are added to the width and height we defined for the div. <br />
+	so if we gave 10px padding, and the width is 200px, the final div will be 220px.<br /><br />
+	
+	
+	
+	</p>
+</body>
+</html>
