@@ -1,0 +1,1 @@
+This is a repository where I put my exercises from learning Web development.
